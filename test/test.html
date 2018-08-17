@@ -1,0 +1,28 @@
+<html>
+<head>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$.ajax({
+		url:"http://192.168.10.163/interfaces/aspen/contentplatform/feedback/insertFeedback",
+		type:"post",
+		traditional: true,
+		dataType:'json',
+		data: {
+			feedbackTitle:1,
+			feedbackContent:2,
+			images : ['1','2','3']
+		},
+		success:function(result){
+			$("#div1").html(result);
+		}
+	});
+});
+</script>
+</head>
+<body>
+</body>
+</html>
