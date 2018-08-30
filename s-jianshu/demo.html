@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
     <style>
-      * {
-        font-size: 16px;
-      }
-      .top {
-        height: 10%;
-        text-align: right;
-        font-size: 15px;
-      }
-      .middle {
-        height: 50%;
-        border: solid red 1px;
-      }
-      .bottom {
-        height: 40%;
-        border: solid red 1px;
-      }
+        .top {
+            height: 10%;
+            text-align: right;
+            font-size: 15px;
+        }
+        .top a {
+            color: black;
+        }
+        .middle {
+            height: 50%;
+            text-align: center;
+        }
+        .middle img {
+            width: 300px;
+            height: 120px;
+        }
+        .middle input {
+            height: 25px;
+            width: 500px;
+        }
+        .middle button {
+            height: 32px;
+            background-color: #0000cc;
+            color: white;
+            border: none;
+            margin-left: -5px;
+        }
+        .bottom {
+            height: 40%;
+            font-size: 10px;
+            text-align: center;
+        }
+        p {
+            font-size: 10px;
+        }
+        .bottom a {
+            font-size: 10px;
+            color: #9b9b9b;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
+    <div>
+
     <div class="top">
         <a href="https://news.baidu.com" class="menv"><b>新闻</b></a>&nbsp;&nbsp;
         <a href="https://news.baidu.com" class="menv"><b>hao123</b></a>&nbsp;&nbsp;
@@ -35,10 +62,33 @@
         <a href="https://news.baidu.com" class="menv">更多产品</a>&nbsp;&nbsp;
     </div>
     <div class="middle">
+        <div>
+            <img src="https://www.baidu.com/img/bd_logo1.png" alt="logo"/>
 
+        </div>
+        <div>
+            <input type="text"/>
+            <button>百度一下</button>
+        </div>
     </div>
-    <div class="middle">
+    <div class="bottom">
+        <img src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_efde696.png" alt="erweima"/>
+        <p>百度</p>
+        <p>
+            <a href="#">把百度设成主页</a>&nbsp;&nbsp;&nbsp;
+            <a href="#">关于百度</a>&nbsp;&nbsp;
+            <a href="#">About Baidu</a>&nbsp;&nbsp;
+            <a href="#">百度推广</a>
+        </p>
+        <p>
+            2018 Baidu&nbsp;
+            <a href="#">使用百度前必读</a>&nbsp;
+            <a href="#">意见反馈</a>&nbsp;
+            京ICP证030173号&nbsp;
+            <a href="#">京公网安备11000002000001号</a>&nbsp;
+        </p>
+    </div>
+</div>
+</body>
 
-    </div>
-  </body>
 </html>
