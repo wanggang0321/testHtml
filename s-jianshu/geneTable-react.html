@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <title>React</title>
+    </head>
+    <body>
+        <div class="container" id="root"></div>
+        <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+        <script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+        <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+        <script type="text/babel">
+            function Table(params) {
+                return (
+                    <table className="table table-bordered">
+                        <thead>
+                            <tr>
+                                {
+                                    params.thead.map(item=>{
+                                        return(
+                                            <th>{item}</th>
+                                        )
+                                    })
+                                }
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                params.tbody.map(item=>{
+                                    return (
+                                        <tr>
+                                            <td>{item.name}</td>
+                                            <td>{item.age}</td>
+                                            <td>{item.sex}</td>
+                                        </tr>
+                                    )
+                                })
+                            }
+                        </tbody>
+                    </table>
+                )
+            }
+            var thead = ['姓名', '年龄', '性别'];
+            var tbody = [
+                {name:'bob', age:23, sex:'male'},
+                {name:'bob', age:23, sex:'male'},
+                {name:'bob', age:23, sex:'male'}
+            ];
+            ReactDOM.render(<Table thead={thead} tbody={tbody}></Table>, document.getElementById('root'));
+        </script>
+    </body>
+</html>
