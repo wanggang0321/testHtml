@@ -1,0 +1,5 @@
+[
+{text:"华北区", children:[{text:"北京"},{text:"天津"},{text:"河北"},{text:"山西"},{text:"内蒙古"}]},
+{text:"华南区", children:[{text:"广东"},{text:"广西"},{text:"海南"}]},
+{text:"华东区"}
+]
